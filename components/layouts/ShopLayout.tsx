@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { FC } from 'react';
+import { NavBar } from '../ui';
 
 interface IShopLayoutProps {
   children?: React.ReactNode;
@@ -27,7 +28,9 @@ export const ShopLayout: FC<IShopLayoutProps> = ({
 
         {imageFullUrl && <meta name="og:image" content={imageFullUrl} />}
       </Head>
-      <nav>{/*TODO: Navbar */}</nav>
+      <nav>
+        <NavBar />
+      </nav>
 
       {/* TODO: Sidebar*/}
       <main
